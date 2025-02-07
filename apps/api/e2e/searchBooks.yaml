@@ -1,0 +1,12 @@
+desc: searchBooks
+runners:
+  req: http://localhost:8080
+steps:
+  - req:
+      /api/v1/books:
+        get:
+          query:
+            title: hello
+    test: |
+      current.res.status == 200
+      && current.res.headers["Content-Type"][0] == "application/json"

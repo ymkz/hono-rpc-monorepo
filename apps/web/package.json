@@ -1,0 +1,54 @@
+{
+  "name": "@app/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev": "wireit",
+    "build": "wireit",
+    "test": "wireit",
+    "coverage": "wireit",
+    "typecheck": "wireit"
+  },
+  "wireit": {
+    "dev": {
+      "command": "next dev --turbopack",
+      "dependencies": ["../api:build"],
+      "service": true
+    },
+    "build": {
+      "command": "next build",
+      "dependencies": ["../api:build"],
+      "output": ["dist"]
+    },
+    "test": {
+      "command": "vitest run",
+      "files": ["src/**/*.test.ts"]
+    },
+    "coverage": {
+      "command": "vitest run --coverage",
+      "files": ["src/**/*.test.ts"],
+      "output": ["coverage"]
+    },
+    "typecheck": {
+      "command": "tsc --noEmit"
+    }
+  },
+  "dependencies": {
+    "@app/api": "workspace:*",
+    "react": "catalog:web",
+    "react-dom": "catalog:web",
+    "next": "catalog:web",
+    "nuqs": "catalog:web",
+    "hono": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "catalog:web",
+    "@types/react-dom": "catalog:web"
+  }
+}

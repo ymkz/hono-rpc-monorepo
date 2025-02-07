@@ -1,0 +1,47 @@
+{
+  "name": "hono-rpc-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "wireit",
+    "build": "wireit",
+    "test": "wireit",
+    "coverage": "wireit",
+    "typecheck": "wireit",
+    "lint": "biome check",
+    "format": "biome check --write",
+    "analyze": "knip"
+  },
+  "wireit": {
+    "dev": {
+      "dependencies": ["./apps/api:dev", "./apps/web:dev"]
+    },
+    "build": {
+      "dependencies": ["./apps/api:build", "./apps/web:build"]
+    },
+    "test": {
+      "dependencies": ["./apps/api:test", "./apps/web:test"]
+    },
+    "coverage": {
+      "dependencies": ["./apps/api:coverage", "./apps/web:coverage"]
+    },
+    "typecheck": {
+      "dependencies": ["./apps/api:typecheck", "./apps/web:typecheck"]
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@dotenvx/dotenvx": "catalog:",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "knip": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:",
+    "wireit": "catalog:"
+  }
+}

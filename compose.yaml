@@ -1,0 +1,20 @@
+services:
+  hono-rpc-monorepo-db:
+    container_name: hono-rpc-monorepo-db
+    image: mysql:9.2
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./compose/mysql/init:/docker-entrypoint-initdb.d
+      - ./compose/mysql/my.conf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    healthcheck:
+      test: mysqladmin ping -uapp -p${MYSQL_PASSWORD}
+      timeout: 60s
+      interval: 10s
+      retries: 5

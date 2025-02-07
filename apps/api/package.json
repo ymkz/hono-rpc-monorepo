@@ -1,0 +1,60 @@
+{
+  "name": "@app/api",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "dev": "wireit",
+    "build": "wireit",
+    "test": "wireit",
+    "coverage": "wireit",
+    "typecheck": "wireit"
+  },
+  "wireit": {
+    "dev": {
+      "command": "tsx watch --clear-screen=false --env-file=.env.local src/server.ts",
+      "service": true
+    },
+    "build": {
+      "command": "tsup",
+      "output": ["dist"]
+    },
+    "test": {
+      "command": "vitest run",
+      "files": ["src/**/*.test.ts"]
+    },
+    "coverage": {
+      "command": "vitest run --coverage",
+      "files": ["src/**/*.test.ts"],
+      "output": ["coverage"]
+    },
+    "typecheck": {
+      "command": "tsc --noEmit"
+    }
+  },
+  "dependencies": {
+    "@hono/node-server": "catalog:api",
+    "@hono/zod-validator": "catalog:api",
+    "@t3-oss/env-core": "catalog:",
+    "hono": "catalog:",
+    "json-2-csv": "catalog:api",
+    "kysely": "catalog:api",
+    "mysql2": "catalog:api",
+    "nanoid": "catalog:api",
+    "pino": "catalog:api",
+    "temporal-polyfill": "catalog:api",
+    "zod": "catalog:",
+    "zod-validation-error": "catalog:"
+  },
+  "devDependencies": {
+    "tsx": "catalog:",
+    "tsup": "catalog:"
+  }
+}
