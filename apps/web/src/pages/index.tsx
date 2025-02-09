@@ -3,8 +3,9 @@ import { loadBooksSearchParams, searchBooks } from '../features/books/api'
 
 export const getServerSideProps = async (context: GetServerSidePropsContext) => {
 	const searchParams = loadBooksSearchParams(context.query)
+	console.log('REQUEST', context.req.url, context.query, searchParams)
 	const data = await searchBooks(searchParams)
-	console.log(data)
+	console.log('RESPONSE', data)
 
 	return {
 		props: {

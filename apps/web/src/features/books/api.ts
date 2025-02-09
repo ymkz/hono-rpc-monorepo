@@ -1,6 +1,6 @@
 import { createLoader, parseAsInteger, parseAsString, parseAsStringEnum } from 'nuqs/server'
 import type { inferParserType } from 'nuqs/server'
-import { client } from '../../helper/client'
+import { client, normalize as normalizeQuery } from '../../helper/client'
 
 const booksSearchParams = {
 	isbn: parseAsString,
@@ -22,19 +22,20 @@ export const loadBooksSearchParams = createLoader(booksSearchParams)
 export const searchBooks = async (searchParams: inferParserType<typeof booksSearchParams>) => {
 	const response = await client.api.v1.books.$get({
 		// FIXME: queryの型がすべてstringになるのはなぜ？
+		// FIXME: searchParamsをまとめてnormalizeQueryできないか？
 		query: {
-			isbn: searchParams.isbn || undefined,
-			title: searchParams.title || undefined,
-			status: searchParams.status || undefined,
-			priceFrom: searchParams.priceFrom ? searchParams.priceFrom.toString() : undefined,
-			priceTo: searchParams.priceTo ? searchParams.priceTo.toString() : undefined,
-			publishedAtStart: searchParams.publishedAtStart || undefined,
-			publishedAtEnd: searchParams.publishedAtEnd || undefined,
-			authorName: searchParams.authorName || undefined,
-			publisherName: searchParams.publisherName || undefined,
-			sort: searchParams.sort,
-			offset: searchParams.offset.toString(),
-			limit: searchParams.limit.toString(),
+			isbn: normalizeQuery(searchParams.isbn),
+			title: normalizeQuery(searchParams.title),
+			status: normalizeQuery(searchParams.status),
+			priceFrom: normalizeQuery(searchParams.priceFrom),
+			priceTo: normalizeQuery(searchParams.priceTo),
+			publishedAtStart: normalizeQuery(searchParams.publishedAtStart),
+			publishedAtEnd: normalizeQuery(searchParams.publishedAtEnd),
+			authorName: normalizeQuery(searchParams.authorName),
+			publisherName: normalizeQuery(searchParams.publisherName),
+			sort: normalizeQuery(searchParams.sort),
+			offset: normalizeQuery(searchParams.offset),
+			limit: normalizeQuery(searchParams.limit),
 		},
 	})
 

@@ -4,20 +4,22 @@ import { isbn13Schema } from '../../../domain/value/isbn'
 import { factory } from '../../../helper/factory'
 import { validatorHookHandler } from '../../handler/validator'
 
-const querySchema = z.object({
-	isbn: isbn13Schema.optional(),
-	title: z.string().optional(),
-	status: z.enum(['PUBLISHED', 'UNPUBLISHED', 'OUT_OF_PRINT']).optional(),
-	priceFrom: z.coerce.number().int().min(0).optional(),
-	priceTo: z.coerce.number().int().min(1).optional(),
-	publishedAtStart: z.string().datetime().optional(),
-	publishedAtEnd: z.string().datetime().optional(),
-	authorName: z.string().optional(),
-	publisherName: z.string().optional(),
-	sort: z.enum(['-published_at', '+published_at', '-price', '+price']).default('-published_at'),
-	offset: z.coerce.number().int().min(0).default(0),
-	limit: z.coerce.number().int().min(1).max(100).default(20),
-})
+const querySchema = z
+	.object({
+		isbn: isbn13Schema.optional(),
+		title: z.string().optional(),
+		status: z.enum(['PUBLISHED', 'UNPUBLISHED', 'OUT_OF_PRINT']).optional(),
+		priceFrom: z.coerce.number().int().min(0).optional(),
+		priceTo: z.coerce.number().int().min(1).optional(),
+		publishedAtStart: z.string().datetime().optional(),
+		publishedAtEnd: z.string().datetime().optional(),
+		authorName: z.string().optional(),
+		publisherName: z.string().optional(),
+		sort: z.enum(['-published_at', '+published_at', '-price', '+price']).default('-published_at'),
+		offset: z.coerce.number().int().min(0).default(0),
+		limit: z.coerce.number().int().min(1).max(100).default(20),
+	})
+	.optional()
 
 // FIXME: レスポンスは型を宣言できないんだっけ
 const responseSchema = z.object({
