@@ -2,7 +2,6 @@
 
 ## Documents
 
-- [API仕様書](docs/apispec/index.html)
 - [データベース](docs/database/README.md)
 
 ## Tasks
