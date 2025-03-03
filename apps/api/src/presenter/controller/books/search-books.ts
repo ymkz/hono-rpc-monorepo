@@ -8,20 +8,19 @@ const querySchema = z
 	.object({
 		isbn: isbn13Schema.optional(),
 		title: z.string().optional(),
-		status: z.enum(['PUBLISHED', 'UNPUBLISHED', 'OUT_OF_PRINT']).optional(),
-		priceFrom: z.coerce.number().int().min(0).optional(),
-		priceTo: z.coerce.number().int().min(1).optional(),
+		status: z.enum(['published', 'unpublished', 'out_of_print']).optional(),
+		priceFrom: z.coerce.number().int().gte(0).optional(),
+		priceTo: z.coerce.number().int().gte(1).optional(),
 		publishedAtStart: z.string().datetime().optional(),
 		publishedAtEnd: z.string().datetime().optional(),
 		authorName: z.string().optional(),
 		publisherName: z.string().optional(),
 		sort: z.enum(['-published_at', '+published_at', '-price', '+price']).default('-published_at'),
-		offset: z.coerce.number().int().min(0).default(0),
-		limit: z.coerce.number().int().min(1).max(100).default(20),
+		offset: z.coerce.number().int().gte(0).default(0),
+		limit: z.coerce.number().int().gte(1).lte(100).default(20),
 	})
 	.optional();
 
-// FIXME: レスポンスは型を宣言できないんだっけ
 const responseSchema = z.object({
 	pagination: z.object({
 		total: z.number().int().min(0),
@@ -31,7 +30,7 @@ const responseSchema = z.object({
 	hits: z.array(
 		z.object({
 			bookId: z.number(),
-			isbn: isbn13Schema,
+			isbn: z.string(),
 			title: z.string(),
 			price: z.number(),
 			publishedAt: z.string().datetime(),
@@ -42,6 +41,8 @@ const responseSchema = z.object({
 		}),
 	),
 });
+
+type ResponseType = z.infer<typeof responseSchema>;
 
 export const searchBooksHandlers = factory.createHandlers(
 	zValidator('query', querySchema, validatorHookHandler),
@@ -60,7 +61,7 @@ export const searchBooksHandlers = factory.createHandlers(
 		// 	sort: query.sort,
 		// })
 
-		return ctx.json({
+		const response: ResponseType = {
 			pagination: { total: 0, offset: 0, limit: 0 },
 			hits: [
 				{
@@ -75,6 +76,8 @@ export const searchBooksHandlers = factory.createHandlers(
 					publisherName: '山田出版',
 				},
 			],
-		});
+		};
+
+		return ctx.json(response);
 	},
 );

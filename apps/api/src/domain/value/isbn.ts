@@ -1,10 +1,30 @@
 import { z } from 'zod';
+import type { Branded } from '../../helper/types';
 
+/**
+ * ISBN-13のブランド型
+ */
+export type Isbn13 = Branded<string, 'Isbn13'>;
+
+/**
+ * ISBN-13の値オブジェクトを表現するコンパニオンオブジェクト
+ */
+export const Isbn13 = {
+	create: (value: string): Isbn13 => {
+		const isbn = isbn13Schema.parse(value);
+		return isbn as unknown as Isbn13;
+	},
+};
+
+/**
+ * ISBN-13のZodスキーマ
+ */
 export const isbn13Schema = z
 	.string()
 	.length(13, 'ISBN-13 must be exactly 13 characters')
 	.regex(/^\d{13}$/, 'Invalid ISBN-13 format')
-	.refine(isValidISBN13, 'Invalid ISBN-13 checksum');
+	.refine(isValidISBN13, 'Invalid ISBN-13 checksum')
+	.transform((value) => Isbn13.create(value));
 
 /**
  * ISBN-13のチェックディジットを検証する
