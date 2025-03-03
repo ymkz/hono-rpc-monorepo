@@ -1,4 +1,4 @@
-import type { NotFoundHandler } from 'hono'
+import type { NotFoundHandler } from 'hono';
 
 export const notFoundHandler: NotFoundHandler = (ctx) => {
 	return ctx.json(
@@ -10,5 +10,5 @@ export const notFoundHandler: NotFoundHandler = (ctx) => {
 			instance: ctx.req.routePath,
 		},
 		404,
-	)
-}
+	);
+};

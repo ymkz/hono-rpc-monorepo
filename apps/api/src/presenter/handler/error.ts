@@ -1,10 +1,10 @@
-import type { ErrorHandler } from 'hono'
-import { logger } from '../../helper/logger'
+import type { ErrorHandler } from 'hono';
+import { logger } from '../../helper/logger';
 
 export const errorHandler: ErrorHandler = (err, ctx) => {
 	// TODO: エラーインスタンス別にログ出力とレスポンスを実装する
 
-	logger.error(err, 'UnexpectedError')
+	logger.error(err, 'UnexpectedError');
 	return ctx.json(
 		{
 			status: 500,
@@ -14,5 +14,5 @@ export const errorHandler: ErrorHandler = (err, ctx) => {
 			instance: ctx.req.routePath,
 		},
 		500,
-	)
-}
+	);
+};

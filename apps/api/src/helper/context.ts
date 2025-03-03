@@ -1,5 +1,5 @@
-import { AsyncLocalStorage } from 'node:async_hooks'
+import { AsyncLocalStorage } from 'node:async_hooks';
 
-type ContextKey = 'reqId'
+type ContextKey = 'reqId';
 
-export const context = new AsyncLocalStorage<Map<ContextKey, string>>()
+export const context = new AsyncLocalStorage<Map<ContextKey, string>>();

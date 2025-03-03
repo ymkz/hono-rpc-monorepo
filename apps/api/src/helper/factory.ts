@@ -1,8 +1,8 @@
-import { createFactory } from 'hono/factory'
+import { createFactory } from 'hono/factory';
 
 export type AppEnv = {
-	Bindings: never
-	Variables: never
-}
+	Bindings: never;
+	Variables: never;
+};
 
-export const factory = createFactory<AppEnv>()
+export const factory = createFactory<AppEnv>();

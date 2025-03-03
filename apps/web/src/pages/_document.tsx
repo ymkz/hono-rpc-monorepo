@@ -1,4 +1,4 @@
-import { Head, Html, Main, NextScript } from 'next/document'
+import { Head, Html, Main, NextScript } from 'next/document';
 
 export default function CustomDocument() {
 	return (
@@ -9,5 +9,5 @@ export default function CustomDocument() {
 				<NextScript />
 			</body>
 		</Html>
-	)
+	);
 }

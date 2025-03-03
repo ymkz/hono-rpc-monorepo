@@ -1,5 +1,2 @@
-[tools]
-node = "22"
-
 [env]
 mise.file = ".env.secret"

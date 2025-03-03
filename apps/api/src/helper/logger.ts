@@ -1,11 +1,11 @@
-import { pino } from 'pino'
-import { Temporal } from 'temporal-polyfill'
-import { context } from './context'
-import { env } from './env'
+import { pino } from 'pino';
+import { Temporal } from 'temporal-polyfill';
+import { context } from './context';
+import { env } from './env';
 
 const timestamp = () => {
-	return Temporal.Now.zonedDateTimeISO().toString()
-}
+	return Temporal.Now.zonedDateTimeISO().toString();
+};
 
 export const logger = pino({
 	enabled: env.NODE_ENV !== 'test',
@@ -18,4 +18,4 @@ export const logger = pino({
 	mixin: () => ({
 		reqId: context.getStore()?.get('reqId'),
 	}),
-})
+});

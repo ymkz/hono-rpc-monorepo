@@ -13,13 +13,20 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single",
-      "semicolons": "asNeeded"
+      "quoteStyle": "single"
     }
   },
   "json": {
     "formatter": {
       "indentStyle": "space"
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
     }
   }
 }

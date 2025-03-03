@@ -1,5 +1,5 @@
-import { createEnv } from '@t3-oss/env-core'
-import { z } from 'zod'
+import { createEnv } from '@t3-oss/env-core';
+import { z } from 'zod';
 
 export const env = createEnv({
 	runtimeEnv: process.env,
@@ -20,4 +20,4 @@ export const env = createEnv({
 		// credentials
 		MYSQL_PASSWORD: z.string(),
 	},
-})
+});

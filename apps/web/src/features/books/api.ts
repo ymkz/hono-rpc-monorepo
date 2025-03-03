@@ -1,6 +1,6 @@
-import { createLoader, parseAsInteger, parseAsString, parseAsStringEnum } from 'nuqs/server'
-import type { inferParserType } from 'nuqs/server'
-import { client, normalize as normalizeQuery } from '../../helper/client'
+import { createLoader, parseAsInteger, parseAsString, parseAsStringEnum } from 'nuqs/server';
+import type { inferParserType } from 'nuqs/server';
+import { client, normalize as normalizeQuery } from '../../helper/client';
 
 const booksSearchParams = {
 	isbn: parseAsString,
@@ -15,9 +15,9 @@ const booksSearchParams = {
 	sort: parseAsStringEnum(['-published_at', '+published_at', '-price', '+price']).withDefault('-published_at'),
 	offset: parseAsInteger.withDefault(0),
 	limit: parseAsInteger.withDefault(20),
-}
+};
 
-export const loadBooksSearchParams = createLoader(booksSearchParams)
+export const loadBooksSearchParams = createLoader(booksSearchParams);
 
 export const searchBooks = async (searchParams: inferParserType<typeof booksSearchParams>) => {
 	const response = await client.api.v1.books.$get({
@@ -37,9 +37,9 @@ export const searchBooks = async (searchParams: inferParserType<typeof booksSear
 			offset: normalizeQuery(searchParams.offset),
 			limit: normalizeQuery(searchParams.limit),
 		},
-	})
+	});
 
 	// FIXME: 正常系以外の時にProblemDetailsがレスポンスされるのをハンドリングして、レスポンスに型をつけたい
-	const data = await response.json()
-	return data
-}
+	const data = await response.json();
+	return data;
+};

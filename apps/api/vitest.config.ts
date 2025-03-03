@@ -1,7 +1,7 @@
-import { config } from '@dotenvx/dotenvx'
-import { defineConfig } from 'vitest/config'
+import { config } from '@dotenvx/dotenvx';
+import { defineConfig } from 'vitest/config';
 
-config({ path: '.env.test' })
+config({ path: '.env.test' });
 
 export default defineConfig(() => ({
 	test: {
@@ -10,4 +10,4 @@ export default defineConfig(() => ({
 		include: ['src/**/*.test.ts'],
 		coverage: { reporter: ['text', 'json', 'html'] },
 	},
-}))
+}));

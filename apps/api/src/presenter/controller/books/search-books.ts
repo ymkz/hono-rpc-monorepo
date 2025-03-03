@@ -1,8 +1,8 @@
-import { zValidator } from '@hono/zod-validator'
-import { z } from 'zod'
-import { isbn13Schema } from '../../../domain/value/isbn'
-import { factory } from '../../../helper/factory'
-import { validatorHookHandler } from '../../handler/validator'
+import { zValidator } from '@hono/zod-validator';
+import { z } from 'zod';
+import { isbn13Schema } from '../../../domain/value/isbn';
+import { factory } from '../../../helper/factory';
+import { validatorHookHandler } from '../../handler/validator';
 
 const querySchema = z
 	.object({
@@ -19,7 +19,7 @@ const querySchema = z
 		offset: z.coerce.number().int().min(0).default(0),
 		limit: z.coerce.number().int().min(1).max(100).default(20),
 	})
-	.optional()
+	.optional();
 
 // FIXME: レスポンスは型を宣言できないんだっけ
 const responseSchema = z.object({
@@ -41,12 +41,12 @@ const responseSchema = z.object({
 			publisherName: z.string(),
 		}),
 	),
-})
+});
 
 export const searchBooksHandlers = factory.createHandlers(
 	zValidator('query', querySchema, validatorHookHandler),
 	async (ctx) => {
-		const query = ctx.req.valid('query')
+		const query = ctx.req.valid('query');
 
 		// const books = await searchBooks({
 		// 	isbn: query.isbn,
@@ -75,6 +75,6 @@ export const searchBooksHandlers = factory.createHandlers(
 					publisherName: '山田出版',
 				},
 			],
-		})
+		});
 	},
-)
+);

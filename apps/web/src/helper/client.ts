@@ -1,7 +1,7 @@
-import type { ApiRouteType } from '@app/api'
-import { hc } from 'hono/client'
+import type { ApiRouteType } from '@app/api';
+import { hc } from 'hono/client';
 
-export const client = hc<ApiRouteType>('http://localhost:8080')
+export const client = hc<ApiRouteType>('http://localhost:8080');
 
 /**
  * 値を文字列に変換する
@@ -11,6 +11,6 @@ export const client = hc<ApiRouteType>('http://localhost:8080')
  * @returns 文字列
  */
 export const normalize = (value?: string | number | null) => {
-	if (value === undefined || value === null || value === '') return undefined
-	return value.toString()
-}
+	if (value === undefined || value === null || value === '') return undefined;
+	return value.toString();
+};

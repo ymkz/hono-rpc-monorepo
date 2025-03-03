@@ -1,6 +1,6 @@
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import { NuqsAdapter } from 'nuqs/adapters/next/pages'
+import type { AppProps } from 'next/app';
+import Head from 'next/head';
+import { NuqsAdapter } from 'nuqs/adapters/next/pages';
 
 export default function CustomApp({ Component, pageProps }: AppProps) {
 	return (
@@ -14,5 +14,5 @@ export default function CustomApp({ Component, pageProps }: AppProps) {
 				<Component {...pageProps} />
 			</NuqsAdapter>
 		</>
-	)
+	);
 }
