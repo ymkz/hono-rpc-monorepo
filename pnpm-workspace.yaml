@@ -9,7 +9,7 @@ catalog:
   "hono": 4.6.20
   "knip": 5.43.6
   "tsup": 8.3.6
-  "tsx": 4.19.2
+  "tsx": 4.19.3
   "typescript": 5.7.3
   "vitest": 3.0.4
   "wireit": 0.14.10
