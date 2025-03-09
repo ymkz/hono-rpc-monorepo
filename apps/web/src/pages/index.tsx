@@ -1,11 +1,11 @@
-import type { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
-import { loadBooksSearchParams, searchBooks } from '../features/books/api';
+import type { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
+import { loadBooksSearchParams, searchBooks } from "../features/books/api";
 
 export const getServerSideProps = async (context: GetServerSidePropsContext) => {
 	const searchParams = loadBooksSearchParams(context.query);
-	console.log('REQUEST', context.req.url, context.query, searchParams);
+	console.log("REQUEST", context.req.url, context.query, searchParams);
 	const data = await searchBooks(searchParams);
-	console.log('RESPONSE', data);
+	console.log("RESPONSE", data);
 
 	return {
 		props: {

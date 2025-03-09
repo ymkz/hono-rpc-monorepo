@@ -11,11 +11,6 @@
   "formatter": {
     "lineWidth": 120
   },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "single"
-    }
-  },
   "json": {
     "formatter": {
       "indentStyle": "space"

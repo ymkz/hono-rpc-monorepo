@@ -1,9 +1,9 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from "tsup";
 
 export default defineConfig({
-	entry: ['src/server.ts'],
-	dts: 'src/server.ts',
-	format: 'esm',
+	entry: ["src/server.ts"],
+	dts: "src/server.ts",
+	format: "esm",
 	clean: true,
 	treeshake: true,
 });

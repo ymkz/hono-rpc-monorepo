@@ -1,4 +1,4 @@
-import { createFactory } from 'hono/factory';
+import { createFactory } from "hono/factory";
 
 export type AppEnv = {
 	Bindings: never;

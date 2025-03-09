@@ -1,10 +1,10 @@
-import { serve } from '@hono/node-server';
-import { showRoutes } from 'hono/dev';
-import { env } from './helper/env';
-import { logger } from './helper/logger';
-import { app } from './routes';
+import { serve } from "@hono/node-server";
+import { showRoutes } from "hono/dev";
+import { env } from "./helper/env";
+import { logger } from "./helper/logger";
+import { app } from "./routes";
 
-export type { ApiRouteType } from './routes';
+export type { ApiRouteType } from "./routes";
 
 showRoutes(app);
 

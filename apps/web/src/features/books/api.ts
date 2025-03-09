@@ -1,18 +1,18 @@
-import { createLoader, parseAsInteger, parseAsString, parseAsStringEnum } from 'nuqs/server';
-import type { inferParserType } from 'nuqs/server';
-import { client, normalize as normalizeQuery } from '../../helper/client';
+import { createLoader, parseAsInteger, parseAsString, parseAsStringEnum } from "nuqs/server";
+import type { inferParserType } from "nuqs/server";
+import { client, normalize as normalizeQuery } from "../../helper/client";
 
 const booksSearchParams = {
 	isbn: parseAsString,
 	title: parseAsString,
-	status: parseAsStringEnum(['PUBLISHED', 'UNPUBLISHED', 'OUT_OF_PRINT']),
+	status: parseAsStringEnum(["PUBLISHED", "UNPUBLISHED", "OUT_OF_PRINT"]),
 	priceFrom: parseAsInteger,
 	priceTo: parseAsInteger,
 	publishedAtStart: parseAsString,
 	publishedAtEnd: parseAsString,
 	authorName: parseAsString,
 	publisherName: parseAsString,
-	sort: parseAsStringEnum(['-published_at', '+published_at', '-price', '+price']).withDefault('-published_at'),
+	sort: parseAsStringEnum(["-published_at", "+published_at", "-price", "+price"]).withDefault("-published_at"),
 	offset: parseAsInteger.withDefault(0),
 	limit: parseAsInteger.withDefault(20),
 };
