@@ -13,8 +13,8 @@ catalogs:
       specifier: 0.4.2
       version: 0.4.2
     json-2-csv:
-      specifier: 5.5.8
-      version: 5.5.8
+      specifier: 5.5.9
+      version: 5.5.9
     kysely:
       specifier: 0.27.5
       version: 0.27.5
@@ -138,7 +138,7 @@ importers:
         version: 4.6.20
       json-2-csv:
         specifier: catalog:api
-        version: 5.5.8
+        version: 5.5.9
       kysely:
         specifier: catalog:api
         version: 0.27.5
@@ -1524,8 +1524,8 @@ packages:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
 
-  json-2-csv@5.5.8:
-    resolution: {integrity: sha512-eMQHOwV+av8Sgo+fkbEbQWOw/kwh89AZ5fNA8TYfcooG6TG1ZOL2WcPUrngIMIK8dBJitQ8QEU0zbncQ0CX4CQ==}
+  json-2-csv@5.5.9:
+    resolution: {integrity: sha512-l4g6GZVHrsN+5SKkpOmGNSvho+saDZwXzj/xmcO0lJAgklzwsiqy70HS5tA9djcRvBEybZ9IF6R1MDFTEsaOGQ==}
     engines: {node: '>= 16'}
 
   jsonc-parser@3.3.1:
@@ -3276,7 +3276,7 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
-  json-2-csv@5.5.8:
+  json-2-csv@5.5.9:
     dependencies:
       deeks: 3.1.0
       doc-path: 4.1.1
