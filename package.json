@@ -2,7 +2,7 @@
   "name": "hono-rpc-monorepo",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.6.1",
+  "packageManager": "pnpm@10.6.5",
   "engines": {
     "node": ">=22",
     "pnpm": ">=10"
