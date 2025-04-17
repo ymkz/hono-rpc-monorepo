@@ -65,8 +65,8 @@ catalogs:
       specifier: 3.1.1
       version: 3.1.1
     wireit:
-      specifier: 0.14.11
-      version: 0.14.11
+      specifier: 0.14.12
+      version: 0.14.12
     zod:
       specifier: 3.24.2
       version: 3.24.2
@@ -120,7 +120,7 @@ importers:
         version: 3.1.1(@types/node@22.14.0)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.3)
       wireit:
         specifier: 'catalog:'
-        version: 0.14.11
+        version: 0.14.12
 
   apps/api:
     dependencies:
@@ -1889,8 +1889,8 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  wireit@0.14.11:
-    resolution: {integrity: sha512-edO3AiL1wYlBIapwx8e1OGEmsG37sv7qnRzx4YDsMPcKo+6NMOjWYcfRbaeoB1MzakLrnozWB2Q1q7Ko45NckA==}
+  wireit@0.14.12:
+    resolution: {integrity: sha512-gNSd+nZmMo6cuICezYXRIayu6TSOeCSCDzjSF0q6g8FKDsRbdqrONrSZYzdk/uBISmRcv4vZtsno6GyGvdXwGA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3363,7 +3363,7 @@ snapshots:
       siginfo: 2.0.0
       stackback: 0.0.2
 
-  wireit@0.14.11:
+  wireit@0.14.12:
     dependencies:
       brace-expansion: 4.0.0
       chokidar: 3.6.0
