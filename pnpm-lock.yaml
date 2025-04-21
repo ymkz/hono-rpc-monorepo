@@ -50,8 +50,8 @@ catalogs:
       specifier: 4.7.6
       version: 4.7.6
     knip:
-      specifier: 5.50.2
-      version: 5.50.2
+      specifier: 5.50.3
+      version: 5.50.3
     tsup:
       specifier: 8.4.0
       version: 8.4.0
@@ -84,8 +84,8 @@ catalogs:
       specifier: 15.3.0
       version: 15.3.0
     nuqs:
-      specifier: 2.4.1
-      version: 2.4.1
+      specifier: 2.4.2
+      version: 2.4.2
     react:
       specifier: 19.1.0
       version: 19.1.0
@@ -111,7 +111,7 @@ importers:
         version: 3.1.1(vitest@3.1.1(@types/node@22.14.1)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.3))
       knip:
         specifier: 'catalog:'
-        version: 5.50.2(@types/node@22.14.1)(typescript@5.8.3)
+        version: 5.50.3(@types/node@22.14.1)(typescript@5.8.3)
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
@@ -181,7 +181,7 @@ importers:
         version: 15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       nuqs:
         specifier: catalog:web
-        version: 2.4.1(next@15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        version: 2.4.2(next@15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       react:
         specifier: catalog:web
         version: 19.1.0
@@ -1205,8 +1205,8 @@ packages:
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
 
-  knip@5.50.2:
-    resolution: {integrity: sha512-TGpfeeSMlaRd5wUkcb4HsVGSiQrE289LZF9qtW2TLHkAZbB2rM53wVQbXSf1KjOvJfBSZYSyYQ6q79lufrwsPw==}
+  knip@5.50.3:
+    resolution: {integrity: sha512-0A4G7UPucGTCpNh5vHSfL0+tVQIuKfJKdg8sAq6EC3COKbAchEbM+TeN4w32OrnJW9CesHs71lqftlggMVfW2A==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -1404,8 +1404,8 @@ packages:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
 
-  nuqs@2.4.1:
-    resolution: {integrity: sha512-u6sngTspqDe3jWHtcmqHQg3dl35niizCZAsm5gy7PBlgG2rwl71Dp2QUv5hwBaWKI9qz0wqILZY86TsRxq66SQ==}
+  nuqs@2.4.2:
+    resolution: {integrity: sha512-E+HE3HhCI9XzRhqHzsmevSLqV6VgwXZQr9jS1YzzqlgeDLr4fMR6XI5gqIZKgfjfNFl6hh/oYrgjmNrs4x7dEw==}
     peerDependencies:
       '@remix-run/react': '>=2'
       next: '>=14.2.0'
@@ -2723,7 +2723,7 @@ snapshots:
 
   jsonc-parser@3.3.1: {}
 
-  knip@5.50.2(@types/node@22.14.1)(typescript@5.8.3):
+  knip@5.50.3(@types/node@22.14.1)(typescript@5.8.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@types/node': 22.14.1
@@ -2902,7 +2902,7 @@ snapshots:
     dependencies:
       path-key: 3.1.1
 
-  nuqs@2.4.1(next@15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0):
+  nuqs@2.4.2(next@15.3.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0):
     dependencies:
       mitt: 3.0.1
       react: 19.1.0
