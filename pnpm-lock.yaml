@@ -16,8 +16,8 @@ catalogs:
       specifier: 5.5.9
       version: 5.5.9
     kysely:
-      specifier: 0.28.1
-      version: 0.28.1
+      specifier: 0.28.2
+      version: 0.28.2
     mysql2:
       specifier: 3.14.0
       version: 3.14.0
@@ -141,7 +141,7 @@ importers:
         version: 5.5.9
       kysely:
         specifier: catalog:api
-        version: 0.28.1
+        version: 0.28.2
       mysql2:
         specifier: catalog:api
         version: 3.14.0
@@ -1231,8 +1231,8 @@ packages:
       '@types/node': '>=18'
       typescript: '>=5.0.4'
 
-  kysely@0.28.1:
-    resolution: {integrity: sha512-umkhsHB0y2JvI83DUtuYYTfvr063xTHTcr/k1z0E2Bg39zGiBcdDvlbP79YMcItn55pKQtD120sZmKa9jhCVtw==}
+  kysely@0.28.2:
+    resolution: {integrity: sha512-4YAVLoF0Sf0UTqlhgQMFU9iQECdah7n+13ANkiuVfRvlK+uI0Etbgd7bVP36dKlG+NXWbhGua8vnGt+sdhvT7A==}
     engines: {node: '>=18.0.0'}
 
   lightningcss-darwin-arm64@1.29.1:
@@ -2781,7 +2781,7 @@ snapshots:
       zod: 3.24.3
       zod-validation-error: 3.4.0(zod@3.24.3)
 
-  kysely@0.28.1: {}
+  kysely@0.28.2: {}
 
   lightningcss-darwin-arm64@1.29.1:
     optional: true
