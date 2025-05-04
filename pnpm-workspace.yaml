@@ -21,7 +21,7 @@ catalogs:
     "@hono/zod-validator": 0.4.3
     "json-2-csv": 5.5.9
     "kysely": 0.28.2
-    "mysql2": 3.14.0
+    "mysql2": 3.14.1
     "nanoid": 5.1.5
     "pino": 9.6.0
     "temporal-polyfill": 0.3.0
