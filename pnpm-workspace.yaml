@@ -18,7 +18,7 @@ catalog:
 catalogs:
   api:
     "@hono/node-server": 1.14.1
-    "@hono/zod-validator": 0.4.3
+    "@hono/zod-validator": 0.5.0
     "json-2-csv": 5.5.9
     "kysely": 0.28.2
     "mysql2": 3.14.1
