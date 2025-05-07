@@ -50,8 +50,8 @@ catalogs:
       specifier: 4.7.8
       version: 4.7.8
     knip:
-      specifier: 5.51.0
-      version: 5.51.0
+      specifier: 5.51.1
+      version: 5.51.1
     tsup:
       specifier: 8.4.0
       version: 8.4.0
@@ -111,7 +111,7 @@ importers:
         version: 3.1.2(vitest@3.1.2(@types/node@22.15.3)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.19.4))
       knip:
         specifier: 'catalog:'
-        version: 5.51.0(@types/node@22.15.3)(typescript@5.8.3)
+        version: 5.51.1(@types/node@22.15.3)(typescript@5.8.3)
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
@@ -1223,8 +1223,8 @@ packages:
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
 
-  knip@5.51.0:
-    resolution: {integrity: sha512-gw5TzLt9FikIk1oPWDc7jPRb/+L3Aw1ia25hWUQBb+hXS/Rbdki/0rrzQygjU5/CVYnRWYqc1kgdNi60Jm1lPg==}
+  knip@5.51.1:
+    resolution: {integrity: sha512-LIv9sQXA0wveWjCbKeKxOPKlCvs+0MXztB8lF0/i4rshxYOb7WZ2B5nCk0fMTodIk1pHdW5h7e0Dv0CsN1TjdQ==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -2762,7 +2762,7 @@ snapshots:
 
   jsonc-parser@3.3.1: {}
 
-  knip@5.51.0(@types/node@22.15.3)(typescript@5.8.3):
+  knip@5.51.1(@types/node@22.15.3)(typescript@5.8.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@types/node': 22.15.3
