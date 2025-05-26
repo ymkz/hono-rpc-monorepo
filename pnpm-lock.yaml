@@ -35,8 +35,8 @@ catalogs:
       specifier: 1.9.4
       version: 1.9.4
     '@dotenvx/dotenvx':
-      specifier: 1.44.0
-      version: 1.44.0
+      specifier: 1.44.1
+      version: 1.44.1
     '@t3-oss/env-core':
       specifier: 0.13.4
       version: 0.13.4
@@ -102,7 +102,7 @@ importers:
         version: 1.9.4
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
-        version: 1.44.0
+        version: 1.44.1
       '@types/node':
         specifier: 'catalog:'
         version: 22.15.19
@@ -285,8 +285,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dotenvx/dotenvx@1.44.0':
-    resolution: {integrity: sha512-18Aa+7KP/L2Kj9lxmT4EJZnsCq/xGIHgzU26rdzsKMhjpeT3YY+qin/dNAnIaVHPZnee7kXpZL55M9htd30r7Q==}
+  '@dotenvx/dotenvx@1.44.1':
+    resolution: {integrity: sha512-j1QImCqf/XJmhIjC1OPpgiZV9g370HG9MNT9s/CDwCKsoYzNCPEKK+GfsidahJx7yIlBbm+4dPLlGec+bKn7oA==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -2066,7 +2066,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@dotenvx/dotenvx@1.44.0':
+  '@dotenvx/dotenvx@1.44.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
