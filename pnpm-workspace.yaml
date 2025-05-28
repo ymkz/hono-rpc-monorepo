@@ -4,7 +4,7 @@ catalog:
   "@biomejs/biome": 1.9.4
   "@dotenvx/dotenvx": 1.44.1
   "@t3-oss/env-core": 0.13.4
-  "@types/node": 22.15.19
+  "@types/node": 22.15.21
   "@vitest/coverage-v8": 3.1.4
   "hono": 4.7.10
   "knip": 5.57.0
@@ -13,7 +13,7 @@ catalog:
   "typescript": 5.8.3
   "vitest": 3.1.4
   "wireit": 0.14.12
-  "zod": 3.25.7
+  "zod": 3.25.13
   "zod-validation-error": 3.4.1
 catalogs:
   api:
