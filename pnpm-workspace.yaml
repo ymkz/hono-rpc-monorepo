@@ -3,7 +3,7 @@ packages:
 catalog:
   "@biomejs/biome": 1.9.4
   "@dotenvx/dotenvx": 1.44.1
-  "@t3-oss/env-core": 0.13.4
+  "@t3-oss/env-core": 0.13.6
   "@types/node": 22.15.21
   "@vitest/coverage-v8": 3.1.4
   "hono": 4.7.10
