@@ -35,8 +35,8 @@ catalogs:
       specifier: 1.9.4
       version: 1.9.4
     '@dotenvx/dotenvx':
-      specifier: 1.44.1
-      version: 1.44.1
+      specifier: 1.44.2
+      version: 1.44.2
     '@t3-oss/env-core':
       specifier: 0.13.8
       version: 0.13.8
@@ -68,8 +68,8 @@ catalogs:
       specifier: 0.14.12
       version: 0.14.12
     zod:
-      specifier: 3.25.57
-      version: 3.25.57
+      specifier: 3.25.58
+      version: 3.25.58
     zod-validation-error:
       specifier: 3.4.1
       version: 3.4.1
@@ -102,7 +102,7 @@ importers:
         version: 1.9.4
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
-        version: 1.44.1
+        version: 1.44.2
       '@types/node':
         specifier: 'catalog:'
         version: 22.15.31
@@ -129,10 +129,10 @@ importers:
         version: 1.14.4(hono@4.7.11)
       '@hono/zod-validator':
         specifier: catalog:api
-        version: 0.7.0(hono@4.7.11)(zod@3.25.57)
+        version: 0.7.0(hono@4.7.11)(zod@3.25.58)
       '@t3-oss/env-core':
         specifier: 'catalog:'
-        version: 0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.57)
+        version: 0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.58)
       hono:
         specifier: 'catalog:'
         version: 4.7.11
@@ -156,10 +156,10 @@ importers:
         version: 0.3.0
       zod:
         specifier: 'catalog:'
-        version: 3.25.57
+        version: 3.25.58
       zod-validation-error:
         specifier: 'catalog:'
-        version: 3.4.1(zod@3.25.57)
+        version: 3.4.1(zod@3.25.58)
     devDependencies:
       tsup:
         specifier: 'catalog:'
@@ -285,8 +285,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dotenvx/dotenvx@1.44.1':
-    resolution: {integrity: sha512-j1QImCqf/XJmhIjC1OPpgiZV9g370HG9MNT9s/CDwCKsoYzNCPEKK+GfsidahJx7yIlBbm+4dPLlGec+bKn7oA==}
+  '@dotenvx/dotenvx@1.44.2':
+    resolution: {integrity: sha512-2C44+G2dch4cB6zw7+oGQ9VcFQuuVhc5xOzfVvY7iUEj2PRhiVMIB6SpNMK1V5TvpdqrAqCYFjclK18Mh9vwNQ==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -2031,11 +2031,11 @@ packages:
     peerDependencies:
       zod: ^3.24.4
 
-  zod@3.25.56:
-    resolution: {integrity: sha512-rd6eEF3BTNvQnR2e2wwolfTmUTnp70aUTqr0oaGbHifzC3BKJsoV+Gat8vxUMR1hwOKBs6El+qWehrHbCpW6SQ==}
-
   zod@3.25.57:
     resolution: {integrity: sha512-6tgzLuwVST5oLUxXTmBqoinKMd3JeesgbgseXeFasKKj8Q1FCZrHnbqJOyiEvr4cVAlbug+CgIsmJ8cl/pU5FA==}
+
+  zod@3.25.58:
+    resolution: {integrity: sha512-DVLmMQzSZwNYzQoMaM3MQWnxr2eq+AtM9Hx3w1/Yl0pH8sLTSjN4jGP7w6f7uand6Hw44tsnSu1hz1AOA6qI2Q==}
 
 snapshots:
 
@@ -2102,7 +2102,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@dotenvx/dotenvx@1.44.1':
+  '@dotenvx/dotenvx@1.44.2':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
@@ -2213,10 +2213,10 @@ snapshots:
     dependencies:
       hono: 4.7.11
 
-  '@hono/zod-validator@0.7.0(hono@4.7.11)(zod@3.25.57)':
+  '@hono/zod-validator@0.7.0(hono@4.7.11)(zod@3.25.58)':
     dependencies:
       hono: 4.7.11
-      zod: 3.25.57
+      zod: 3.25.58
 
   '@img/sharp-darwin-arm64@0.34.1':
     optionalDependencies:
@@ -2487,11 +2487,11 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.57)':
+  '@t3-oss/env-core@0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.58)':
     optionalDependencies:
       arktype: 2.1.20
       typescript: 5.8.3
-      zod: 3.25.57
+      zod: 3.25.58
 
   '@tybys/wasm-util@0.9.0':
     dependencies:
@@ -2963,8 +2963,8 @@ snapshots:
       smol-toml: 1.3.4
       strip-json-comments: 5.0.2
       typescript: 5.8.3
-      zod: 3.25.56
-      zod-validation-error: 3.4.1(zod@3.25.56)
+      zod: 3.25.57
+      zod-validation-error: 3.4.1(zod@3.25.57)
 
   kysely@0.28.2: {}
 
@@ -3640,14 +3640,14 @@ snapshots:
       string-width: 5.1.2
       strip-ansi: 7.1.0
 
-  zod-validation-error@3.4.1(zod@3.25.56):
-    dependencies:
-      zod: 3.25.56
-
   zod-validation-error@3.4.1(zod@3.25.57):
     dependencies:
       zod: 3.25.57
 
-  zod@3.25.56: {}
+  zod-validation-error@3.4.1(zod@3.25.58):
+    dependencies:
+      zod: 3.25.58
 
   zod@3.25.57: {}
+
+  zod@3.25.58: {}
