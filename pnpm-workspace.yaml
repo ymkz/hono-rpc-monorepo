@@ -6,7 +6,7 @@ catalog:
   "@t3-oss/env-core": 0.13.8
   "@types/node": 22.15.32
   "@vitest/coverage-v8": 3.2.4
-  "hono": 4.8.0
+  "hono": 4.8.1
   "knip": 5.61.2
   "tsup": 8.5.0
   "tsx": 4.20.3
