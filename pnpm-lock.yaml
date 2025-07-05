@@ -50,8 +50,8 @@ catalogs:
       specifier: 4.8.3
       version: 4.8.3
     knip:
-      specifier: 5.61.2
-      version: 5.61.2
+      specifier: 5.61.3
+      version: 5.61.3
     tsup:
       specifier: 8.5.0
       version: 8.5.0
@@ -111,7 +111,7 @@ importers:
         version: 3.2.4(vitest@3.2.4(@types/node@22.15.34)(jiti@2.4.2)(lightningcss@1.29.1)(tsx@4.20.3))
       knip:
         specifier: 'catalog:'
-        version: 5.61.2(@types/node@22.15.34)(typescript@5.8.3)
+        version: 5.61.3(@types/node@22.15.34)(typescript@5.8.3)
       typescript:
         specifier: 'catalog:'
         version: 5.8.3
@@ -1320,8 +1320,8 @@ packages:
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
 
-  knip@5.61.2:
-    resolution: {integrity: sha512-ZBv37zDvZj0/Xwk0e93xSjM3+5bjxgqJ0PH2GlB5tnWV0ktXtmatWLm+dLRUCT/vpO3SdGz2nNAfvVhuItUNcQ==}
+  knip@5.61.3:
+    resolution: {integrity: sha512-8iSz8i8ufIjuUwUKzEwye7ROAW0RzCze7T770bUiz0PKL+SSwbs4RS32fjMztLwcOzSsNPlXdUAeqmkdzXxJ1Q==}
     engines: {node: '>=18.18.0'}
     hasBin: true
     peerDependencies:
@@ -2027,12 +2027,6 @@ packages:
   wrap-ansi@8.1.0:
     resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
     engines: {node: '>=12'}
-
-  zod-validation-error@3.5.1:
-    resolution: {integrity: sha512-ozT8jy2nHaeKjaRIEThwgRXBwm16hAy0BaTRx1I2IY1xrezPegmlFmYKb5tcvYqZDQm0sfZtDr2IR7CdCJzTGw==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      zod: ^3.25.0
 
   zod-validation-error@3.5.2:
     resolution: {integrity: sha512-mdi7YOLtram5dzJ5aDtm1AG9+mxRma1iaMrZdYIpFO7epdKBUwLHIxTF8CPDeCQ828zAXYtizrKlEJAtzgfgrw==}
@@ -2954,7 +2948,7 @@ snapshots:
 
   jsonc-parser@3.3.1: {}
 
-  knip@5.61.2(@types/node@22.15.34)(typescript@5.8.3):
+  knip@5.61.3(@types/node@22.15.34)(typescript@5.8.3):
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       '@types/node': 22.15.34
@@ -2970,7 +2964,7 @@ snapshots:
       strip-json-comments: 5.0.2
       typescript: 5.8.3
       zod: 3.25.67
-      zod-validation-error: 3.5.1(zod@3.25.67)
+      zod-validation-error: 3.5.2(zod@3.25.67)
 
   kysely@0.28.2: {}
 
@@ -3647,10 +3641,6 @@ snapshots:
       ansi-styles: 6.2.1
       string-width: 5.1.2
       strip-ansi: 7.1.0
-
-  zod-validation-error@3.5.1(zod@3.25.67):
-    dependencies:
-      zod: 3.25.67
 
   zod-validation-error@3.5.2(zod@3.25.67):
     dependencies:
