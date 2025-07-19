@@ -35,8 +35,8 @@ catalogs:
       specifier: 1.9.4
       version: 1.9.4
     '@dotenvx/dotenvx':
-      specifier: 1.47.3
-      version: 1.47.3
+      specifier: 1.47.5
+      version: 1.47.5
     '@t3-oss/env-core':
       specifier: 0.13.8
       version: 0.13.8
@@ -71,8 +71,8 @@ catalogs:
       specifier: 3.25.76
       version: 3.25.76
     zod-validation-error:
-      specifier: 3.5.2
-      version: 3.5.2
+      specifier: 3.5.3
+      version: 3.5.3
   web:
     '@types/react':
       specifier: 19.1.8
@@ -102,7 +102,7 @@ importers:
         version: 1.9.4
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
-        version: 1.47.3
+        version: 1.47.5
       '@types/node':
         specifier: 'catalog:'
         version: 22.16.3
@@ -159,7 +159,7 @@ importers:
         version: 3.25.76
       zod-validation-error:
         specifier: 'catalog:'
-        version: 3.5.2(zod@3.25.76)
+        version: 3.5.3(zod@3.25.76)
     devDependencies:
       tsup:
         specifier: 'catalog:'
@@ -285,8 +285,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dotenvx/dotenvx@1.47.3':
-    resolution: {integrity: sha512-V0jxoEgyTrP6INJYBXxR6qkaS1qUXmrWTz7FZVx706TgXnMnR7LVRi5Bf9z/o0UmZlkavJD13PLediPi4QvUTQ==}
+  '@dotenvx/dotenvx@1.47.5':
+    resolution: {integrity: sha512-FtDgJyqOXmkj+BTU0qcE4Iq2HKjrEH6ZhRMc7m8fmOwstf1Ms9/9lbLNzyiNqyQrEnVr38W8PTTWMbDB3IX5og==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -2034,6 +2034,12 @@ packages:
     peerDependencies:
       zod: ^3.25.0
 
+  zod-validation-error@3.5.3:
+    resolution: {integrity: sha512-OT5Y8lbUadqVZCsnyFaTQ4/O2mys4tj7PqhdbBCp7McPwvIEKfPtdA6QfPeFQK2/Rz5LgwmAXRJTugBNBi0btw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      zod: ^3.25.0 || ^4.0.0
+
   zod@3.25.75:
     resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
 
@@ -2105,7 +2111,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@dotenvx/dotenvx@1.47.3':
+  '@dotenvx/dotenvx@1.47.5':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
@@ -3649,7 +3655,7 @@ snapshots:
     dependencies:
       zod: 3.25.75
 
-  zod-validation-error@3.5.2(zod@3.25.76):
+  zod-validation-error@3.5.3(zod@3.25.76):
     dependencies:
       zod: 3.25.76
 

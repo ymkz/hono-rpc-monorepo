@@ -2,7 +2,7 @@ packages:
   - apps/*
 catalog:
   "@biomejs/biome": 1.9.4
-  "@dotenvx/dotenvx": 1.47.3
+  "@dotenvx/dotenvx": 1.47.5
   "@t3-oss/env-core": 0.13.8
   "@types/node": 22.16.3
   "@vitest/coverage-v8": 3.2.4
@@ -14,7 +14,7 @@ catalog:
   "vitest": 3.2.4
   "wireit": 0.14.12
   "zod": 3.25.76
-  "zod-validation-error": 3.5.2
+  "zod-validation-error": 3.5.3
 catalogs:
   api:
     "@hono/node-server": 1.15.0
