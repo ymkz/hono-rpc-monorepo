@@ -10,8 +10,8 @@ catalogs:
       specifier: 1.15.0
       version: 1.15.0
     '@hono/zod-validator':
-      specifier: 0.7.0
-      version: 0.7.0
+      specifier: 0.7.1
+      version: 0.7.1
     json-2-csv:
       specifier: 5.5.9
       version: 5.5.9
@@ -129,7 +129,7 @@ importers:
         version: 1.15.0(hono@4.8.4)
       '@hono/zod-validator':
         specifier: catalog:api
-        version: 0.7.0(hono@4.8.4)(zod@3.25.76)
+        version: 0.7.1(hono@4.8.4)(zod@3.25.76)
       '@t3-oss/env-core':
         specifier: 'catalog:'
         version: 0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.76)
@@ -460,11 +460,11 @@ packages:
     peerDependencies:
       hono: ^4
 
-  '@hono/zod-validator@0.7.0':
-    resolution: {integrity: sha512-qe2ZE6sHFE98dcUrbYMtS3bAV8hqcCOflykvZga2S7XhmNSZzT+dIz4OuMILsjLHkJw9JMn912/dB7dQOmuPvg==}
+  '@hono/zod-validator@0.7.1':
+    resolution: {integrity: sha512-8+vJT1RvezAx5sN7hiZ5Mis0RMuFL77nBEcqQQgT9ufoLkxr+7ll461WlBJQcGoQSY6EGMClVae19v3s/7bbgQ==}
     peerDependencies:
       hono: '>=3.9.0'
-      zod: ^3.25.0
+      zod: ^3.25.0 || ^4.0.0
 
   '@img/sharp-darwin-arm64@0.34.1':
     resolution: {integrity: sha512-pn44xgBtgpEbZsu+lWf2KNb6OAf70X68k+yk69Ic2Xz11zHR/w24/U49XT7AeRwJ0Px+mhALhU5LPci1Aymk7A==}
@@ -2222,7 +2222,7 @@ snapshots:
     dependencies:
       hono: 4.8.4
 
-  '@hono/zod-validator@0.7.0(hono@4.8.4)(zod@3.25.76)':
+  '@hono/zod-validator@0.7.1(hono@4.8.4)(zod@3.25.76)':
     dependencies:
       hono: 4.8.4
       zod: 3.25.76
