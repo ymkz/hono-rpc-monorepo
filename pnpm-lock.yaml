@@ -47,8 +47,8 @@ catalogs:
       specifier: 3.2.4
       version: 3.2.4
     hono:
-      specifier: 4.8.9
-      version: 4.8.9
+      specifier: 4.8.10
+      version: 4.8.10
     knip:
       specifier: 5.62.0
       version: 5.62.0
@@ -126,16 +126,16 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:api
-        version: 1.17.1(hono@4.8.9)
+        version: 1.17.1(hono@4.8.10)
       '@hono/zod-validator':
         specifier: catalog:api
-        version: 0.7.2(hono@4.8.9)(zod@3.25.76)
+        version: 0.7.2(hono@4.8.10)(zod@3.25.76)
       '@t3-oss/env-core':
         specifier: 'catalog:'
         version: 0.13.8(arktype@2.1.20)(typescript@5.8.3)(zod@3.25.76)
       hono:
         specifier: 'catalog:'
-        version: 4.8.9
+        version: 4.8.10
       json-2-csv:
         specifier: catalog:api
         version: 5.5.9
@@ -175,7 +175,7 @@ importers:
         version: link:../api
       hono:
         specifier: 'catalog:'
-        version: 4.8.9
+        version: 4.8.10
       next:
         specifier: catalog:web
         version: 15.4.4(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
@@ -1228,8 +1228,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.8.9:
-    resolution: {integrity: sha512-ERIxkXMRhUxGV7nS/Af52+j2KL60B1eg+k6cPtgzrGughS+espS9KQ7QO0SMnevtmRlBfAcN0mf1jKtO6j/doA==}
+  hono@4.8.10:
+    resolution: {integrity: sha512-DRMYbR3aFk6YET1FCSAFbgF2cWYTz5j0YAFYPECx9fmrbKBDAYnWU+YCgRTpOaatxMYN6e68U/2IG39zRP4W/A==}
     engines: {node: '>=16.9.0'}
 
   html-escaper@2.0.2:
@@ -2216,13 +2216,13 @@ snapshots:
   '@esbuild/win32-x64@0.25.0':
     optional: true
 
-  '@hono/node-server@1.17.1(hono@4.8.9)':
+  '@hono/node-server@1.17.1(hono@4.8.10)':
     dependencies:
-      hono: 4.8.9
+      hono: 4.8.10
 
-  '@hono/zod-validator@0.7.2(hono@4.8.9)(zod@3.25.76)':
+  '@hono/zod-validator@0.7.2(hono@4.8.10)(zod@3.25.76)':
     dependencies:
-      hono: 4.8.9
+      hono: 4.8.10
       zod: 3.25.76
 
   '@img/sharp-darwin-arm64@0.34.3':
@@ -2876,7 +2876,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.8.9: {}
+  hono@4.8.10: {}
 
   html-escaper@2.0.2: {}
 
