@@ -19,8 +19,8 @@ catalogs:
       specifier: 0.28.3
       version: 0.28.3
     mysql2:
-      specifier: 3.14.2
-      version: 3.14.2
+      specifier: 3.14.3
+      version: 3.14.3
     nanoid:
       specifier: 5.1.5
       version: 5.1.5
@@ -35,8 +35,8 @@ catalogs:
       specifier: 1.9.4
       version: 1.9.4
     '@dotenvx/dotenvx':
-      specifier: 1.48.3
-      version: 1.48.3
+      specifier: 1.48.4
+      version: 1.48.4
     '@t3-oss/env-core':
       specifier: 0.13.8
       version: 0.13.8
@@ -102,7 +102,7 @@ importers:
         version: 1.9.4
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
-        version: 1.48.3
+        version: 1.48.4
       '@types/node':
         specifier: 'catalog:'
         version: 22.17.0
@@ -144,7 +144,7 @@ importers:
         version: 0.28.3
       mysql2:
         specifier: catalog:api
-        version: 3.14.2
+        version: 3.14.3
       nanoid:
         specifier: catalog:api
         version: 5.1.5
@@ -285,8 +285,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@dotenvx/dotenvx@1.48.3':
-    resolution: {integrity: sha512-7Tk0Rzgz0SEkaJRGijbKtVDHHztHz9fyXwcDT86VtD1fGVRirk4aBKUud1PEQdhwcg+jDblKGoXeA+I7J60CxQ==}
+  '@dotenvx/dotenvx@1.48.4':
+    resolution: {integrity: sha512-GpJWpGVI5JGhNzFlWOjCD3KMiN3xU1US4oLKQ7SiiGru4LvR7sUf3pDMpfjtlgzHStL5ydq4ekfZcRxWpHaJkA==}
     hasBin: true
 
   '@ecies/ciphers@0.2.2':
@@ -1124,8 +1124,8 @@ packages:
     resolution: {integrity: sha512-h1ErTglQAVv2gCnOpD3sFS6uolDbOKHDU1BZq+Kl3npPqroU3dYL42lUgMfd5UimlwtRgp7C9dLGwqQ5D2HYgQ==}
     engines: {node: '>=16'}
 
-  dotenv@16.4.7:
-    resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
+  dotenv@17.2.1:
+    resolution: {integrity: sha512-kQhDYKZecqnM0fCnzI5eIv5L4cAe/iRI+HqMbO/hbRdTAeXDG+M9FjipUxNfbARuEg4iHIbhnhs78BCHNbSxEQ==}
     engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
@@ -1480,8 +1480,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  mysql2@3.14.2:
-    resolution: {integrity: sha512-YD6mZMeoypmheHT6b2BrVmQFvouEpRICuvPIREulx2OvP1xAxxeqkMQqZSTBefv0PiOBKGYFa2zQtY+gf/4eQw==}
+  mysql2@3.14.3:
+    resolution: {integrity: sha512-fD6MLV8XJ1KiNFIF0bS7Msl8eZyhlTDCDl75ajU5SJtpdx9ZPEACulJcqJWr1Y8OYyxsFc4j3+nflpmhxCU5aQ==}
     engines: {node: '>= 8.0'}
 
   mz@2.7.0:
@@ -2109,10 +2109,10 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@dotenvx/dotenvx@1.48.3':
+  '@dotenvx/dotenvx@1.48.4':
     dependencies:
       commander: 11.1.0
-      dotenv: 16.4.7
+      dotenv: 17.2.1
       eciesjs: 0.4.13
       execa: 5.1.1
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2742,7 +2742,7 @@ snapshots:
 
   doc-path@4.1.1: {}
 
-  dotenv@16.4.7: {}
+  dotenv@17.2.1: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -3087,7 +3087,7 @@ snapshots:
 
   ms@2.1.3: {}
 
-  mysql2@3.14.2:
+  mysql2@3.14.3:
     dependencies:
       aws-ssl-profiles: 1.1.2
       denque: 2.1.0
