@@ -28,7 +28,7 @@ catalogs:
   web:
     "react": 19.1.1
     "react-dom": 19.1.1
-    "next": 15.4.5
+    "next": 15.4.6
     "nuqs": 2.4.3
     "@types/react": 19.1.9
     "@types/react-dom": 19.1.7
