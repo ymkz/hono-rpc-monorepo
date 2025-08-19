@@ -9,7 +9,7 @@ catalog:
   "hono": 4.8.12
   "knip": 5.62.0
   "tsup": 8.5.0
-  "tsx": 4.20.3
+  "tsx": 4.20.4
   "typescript": 5.9.2
   "vitest": 3.2.4
   "wireit": 0.14.12
@@ -17,7 +17,7 @@ catalog:
   "zod-validation-error": 3.5.3
 catalogs:
   api:
-    "@hono/node-server": 1.18.1
+    "@hono/node-server": 1.18.2
     "@hono/zod-validator": 0.7.2
     "json-2-csv": 5.5.9
     "kysely": 0.28.5
