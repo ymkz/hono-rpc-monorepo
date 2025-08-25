@@ -7,8 +7,8 @@ settings:
 catalogs:
   api:
     '@hono/node-server':
-      specifier: 1.18.2
-      version: 1.18.2
+      specifier: 1.19.0
+      version: 1.19.0
     '@hono/zod-validator':
       specifier: 0.7.2
       version: 0.7.2
@@ -126,7 +126,7 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: catalog:api
-        version: 1.18.2(hono@4.9.2)
+        version: 1.19.0(hono@4.9.2)
       '@hono/zod-validator':
         specifier: catalog:api
         version: 0.7.2(hono@4.9.2)(zod@3.25.76)
@@ -454,8 +454,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@hono/node-server@1.18.2':
-    resolution: {integrity: sha512-icgNvC0vRYivzyuSSaUv9ttcwtN8fDyd1k3AOIBDJgYd84tXRZSS6na8X54CY/oYoFTNhEmZraW/Rb9XYwX4KA==}
+  '@hono/node-server@1.19.0':
+    resolution: {integrity: sha512-1k8/8OHf5VIymJEcJyVksFpT+AQ5euY0VA5hUkCnlKpD4mr8FSbvXaHblxeTTEr90OaqWzAkQaqD80qHZQKxBA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -2216,7 +2216,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.0':
     optional: true
 
-  '@hono/node-server@1.18.2(hono@4.9.2)':
+  '@hono/node-server@1.19.0(hono@4.9.2)':
     dependencies:
       hono: 4.9.2
 
