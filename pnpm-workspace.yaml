@@ -30,5 +30,5 @@ catalogs:
     "react-dom": 19.1.1
     "next": 15.5.0
     "nuqs": 2.4.3
-    "@types/react": 19.1.10
+    "@types/react": 19.1.11
     "@types/react-dom": 19.1.7
