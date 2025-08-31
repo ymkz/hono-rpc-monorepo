@@ -6,10 +6,10 @@ catalog:
   "@t3-oss/env-core": 0.13.8
   "@types/node": 22.17.2
   "@vitest/coverage-v8": 3.2.4
-  "hono": 4.9.2
+  "hono": 4.9.4
   "knip": 5.63.0
   "tsup": 8.5.0
-  "tsx": 4.20.4
+  "tsx": 4.20.5
   "typescript": 5.9.2
   "vitest": 3.2.4
   "wireit": 0.14.12
