@@ -20,7 +20,7 @@ catalogs:
     "@hono/node-server": 1.19.2
     "@hono/zod-validator": 0.7.2
     "json-2-csv": 5.5.9
-    "kysely": 0.28.6
+    "kysely": 0.28.7
     "mysql2": 3.14.5
     "nanoid": 5.1.5
     "pino": 9.9.5
