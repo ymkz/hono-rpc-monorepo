@@ -17,7 +17,7 @@ catalog:
   "zod-validation-error": 3.5.3
 catalogs:
   api:
-    "@hono/node-server": 1.19.2
+    "@hono/node-server": 1.19.3
     "@hono/zod-validator": 0.7.2
     "json-2-csv": 5.5.9
     "kysely": 0.28.7
