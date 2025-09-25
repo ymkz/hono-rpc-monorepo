@@ -13,7 +13,7 @@ catalog:
   "typescript": 5.9.2
   "vitest": 3.2.4
   "wireit": 0.14.12
-  "zod": 3.25.76
+  "zod": 4.1.9
   "zod-validation-error": 3.5.3
 catalogs:
   api:
