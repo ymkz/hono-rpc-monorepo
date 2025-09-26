@@ -1,7 +1,7 @@
 packages:
   - apps/*
 catalog:
-  "@biomejs/biome": 1.9.4
+  "@biomejs/biome": 2.2.4
   "@dotenvx/dotenvx": 1.50.1
   "@t3-oss/env-core": 0.13.8
   "@types/node": 22.18.6
