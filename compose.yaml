@@ -1,7 +1,7 @@
 services:
   hono-rpc-monorepo-db:
     container_name: hono-rpc-monorepo-db
-    image: mysql:9.4
+    image: mysql:9.5
     restart: always
     ports:
       - 3306:3306
