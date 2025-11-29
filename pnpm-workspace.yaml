@@ -6,8 +6,8 @@ catalog:
   "@t3-oss/env-core": 0.13.8
   "@types/node": 22.19.1
   "@vitest/coverage-v8": 3.2.4
-  "hono": 4.10.5
-  "knip": 5.69.1
+  "hono": 4.10.7
+  "knip": 5.70.2
   "tsup": 8.5.1
   "tsx": 4.20.6
   "typescript": 5.9.3
@@ -18,7 +18,7 @@ catalog:
 catalogs:
   api:
     "@hono/node-server": 1.19.6
-    "@hono/zod-validator": 0.7.4
+    "@hono/zod-validator": 0.7.5
     "json-2-csv": 5.5.10
     "kysely": 0.28.8
     "mysql2": 3.15.3
@@ -29,6 +29,6 @@ catalogs:
     "react": 19.2.0
     "react-dom": 19.2.0
     "next": 15.5.6
-    "nuqs": 2.7.3
-    "@types/react": 19.2.4
+    "nuqs": 2.8.1
+    "@types/react": 19.2.7
     "@types/react-dom": 19.2.3
