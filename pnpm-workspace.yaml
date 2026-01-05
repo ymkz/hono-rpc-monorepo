@@ -2,14 +2,14 @@ packages:
   - apps/*
 catalog:
   "@biomejs/biome": 1.9.4
-  "@dotenvx/dotenvx": 1.51.1
-  "@t3-oss/env-core": 0.13.8
-  "@types/node": 22.19.1
+  "@dotenvx/dotenvx": 1.51.4
+  "@t3-oss/env-core": 0.13.10
+  "@types/node": 22.19.3
   "@vitest/coverage-v8": 3.2.4
-  "hono": 4.10.5
-  "knip": 5.69.1
+  "hono": 4.11.3
+  "knip": 5.79.0
   "tsup": 8.5.1
-  "tsx": 4.20.6
+  "tsx": 4.21.0
   "typescript": 5.9.3
   "vitest": 3.2.4
   "wireit": 0.14.12
@@ -17,18 +17,18 @@ catalog:
   "zod-validation-error": 3.5.4
 catalogs:
   api:
-    "@hono/node-server": 1.19.6
-    "@hono/zod-validator": 0.7.4
+    "@hono/node-server": 1.19.7
+    "@hono/zod-validator": 0.7.6
     "json-2-csv": 5.5.10
-    "kysely": 0.28.8
-    "mysql2": 3.15.3
+    "kysely": 0.28.9
+    "mysql2": 3.16.0
     "nanoid": 5.1.6
     "pino": 9.14.0
     "temporal-polyfill": 0.3.0
   web:
-    "react": 19.2.0
-    "react-dom": 19.2.0
-    "next": 15.5.6
-    "nuqs": 2.7.3
-    "@types/react": 19.2.4
+    "react": 19.2.3
+    "react-dom": 19.2.3
+    "next": 15.5.9
+    "nuqs": 2.8.6
+    "@types/react": 19.2.7
     "@types/react-dom": 19.2.3
